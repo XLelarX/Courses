@@ -3,6 +3,7 @@
 - lambdas/ - лямбды
 - maven/ - мавен
 - streams/ - стримы
+
 Практика:
 - courses/ - проект с практичекой частью
 - courses/src/unit_tests/tasks/ - задачки по юнит-тестам
