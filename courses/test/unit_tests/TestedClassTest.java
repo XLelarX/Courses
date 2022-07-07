@@ -18,7 +18,7 @@ import static org.mockito.Mockito.when;
 @PrepareForTest(TestedClass.class)
 public class TestedClassTest {
 
-    private static final String TESTED_STRING = "tested-string";
+    private static final String TESTED_STRING = "git-tested-string";
 
     @Test
     public void getTestedField() {
