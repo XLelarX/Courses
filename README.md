@@ -11,3 +11,4 @@
 - cources/src/maven/tasks/ - задачки по мавену
 - cources/src/streams/tasks/ - задачки по стримам
 - courses/src/reflection/tasks/ - задачки по рефлекшенам
+- courses/src/multithreading/tasks/ - задачки по многопоточке
