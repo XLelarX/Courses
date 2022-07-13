@@ -1,5 +1,6 @@
 package unit_tests;
 
+import annotation.CustomSecondAnnotationTest;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -53,5 +54,15 @@ public class TestedClassTest {
         PowerMockito.when(testedClass, "privateTest").thenReturn(TESTED_STRING);
         String result = Whitebox.invokeMethod(testedClass, "privateTest");
         Assert.assertEquals(TESTED_STRING, result);
+    }
+
+    @Test
+    public void processTest() {
+        new CustomSecondAnnotationTest().process("init");
+    }
+
+    @Test
+    public void processFieldTest() {
+        new CustomSecondAnnotationTest().processField("fieldAnnotation");
     }
 }
