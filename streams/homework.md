@@ -11,7 +11,7 @@
    2. Выведите значение каждого элемента.
    3. Преобразуйте _Stream_ в _Map_, где ключ - count,а значение - name.
 
-4. Создайте _Map<String, List<StreamContainer>>_ и выполните следующее:
+4. Создайте _Map<String, List\<StreamContainer\>>_ и выполните следующее:
    1. Приведите мапу к единому _Stream-у_ _StreamContainer_.
    2. Создайте список из всех _StreamContainer-ов_ и посчитайте количество элементов методами _Stream-ов_.
 
