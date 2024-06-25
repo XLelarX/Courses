@@ -1,8 +1,2 @@
-- _base/_ - базовый синтаксис
-- _unit-tests/_ - юнит-тесты
-- _exceptions/_ - исключения
-- _lambdas/_ - лямбды
-- _maven/_ - мавен
-- _streams/_ - стримы
-- _multithreading/_ - многопоточка
-- _annotations/_ - аннотации
+- _java/_ - курс java
+- _spring/_ - курс spring
