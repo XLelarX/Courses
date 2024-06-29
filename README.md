@@ -1,2 +1,3 @@
+- [Требования к решению задач](rules.md) 
 - _java/_ - курс java
 - _spring/_ - курс spring
