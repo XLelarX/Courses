@@ -5,5 +5,3 @@
 ## Домашнее задание
 
 [Создание Java-проектов с помощью Maven](https://spring.io/guides/gs/maven/)
-
-
