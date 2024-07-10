@@ -10,20 +10,40 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
+@Transactional
 public class DBProductRepository implements ProductRepository {
 
     public static final String JDBC = "jdbc:postgresql://localhost:5432/postgres?currentSchema=zuev_kd&user=postgres&password=root";
 
     @Override
+    @Transactional
     public long save(Product product) {
         var insertSql = "INSERT INTO products (name, price) VALUES (?,?);";
 
         try (var connection = DriverManager.getConnection(JDBC);
              var prepareStatement = connection.prepareStatement(insertSql, Statement.RETURN_GENERATED_KEYS)) {
+            connection.setAutoCommit(false);
+
             prepareStatement.setString(1, product.getName());
             prepareStatement.setDouble(2, product.getPrice().doubleValue());
 
             prepareStatement.executeUpdate();
+
+            //logic
+
+            prepareStatement.executeUpdate();
+
+            //logic
+
+            prepareStatement.executeUpdate();
+
+            //logic
+
+            prepareStatement.executeUpdate();
+
+            prepareStatement.executeUpdate();
+
+            connection.commit();
 
             ResultSet rs = prepareStatement.getGeneratedKeys();
             if (rs.next()) {
@@ -32,6 +52,7 @@ public class DBProductRepository implements ProductRepository {
                 throw new RuntimeException("Ошибка при получении идентификатора");
             }
         } catch (SQLException e) {
+            connection.rollback();
             throw new RuntimeException(e);
         }
     }

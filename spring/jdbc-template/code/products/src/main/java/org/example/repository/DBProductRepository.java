@@ -40,7 +40,7 @@ public class DBProductRepository implements ProductRepository {
 
         jdbcTemplate.update(preparedStatementCreator, keyHolder);
 
-        return (long) (int) keyHolder.getKeys().get("id");
+        return (long) keyHolder.getKeys().get("id");
     }
 
     @Override
